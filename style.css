@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 20px;
+}
+
+.selectbox {
+  position: relative; 
+  display: inline-block;
+  *display: inline; 
+  zoom: 1;
+  border: 1px solid #aeaeae;
+  background: #e6e6e6;
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #e6e6e6));
+  background-image: linear-gradient(top, white, #e6e6e6);
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #d2d2d2;
+}
+
+.selectbox select {
+  z-index: 10; 
+  position: relative;
+  border: none; 
+  background: none; 
+  outline: none; 
+  padding: 4px 12px 4px 32px;
+  opacity: 0;
+  -webkit-appearance: none; 
+  filter: alpha(opacity=0);
+}
+
+.selecttext {
+  z-index: 9;
+  position: absolute;
+  left: 5px;
+  display: inline-block;
+  *display: inline; 
+  zoom: 1;
+  padding-top: 4px;
+  background: transparent;
+  color: #666;
+}
+
+.select-arrow {
+  background: url(images/caret.png) no-repeat 50% 50%;
+  position: absolute;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  height: 100%;
+  width: 26px;
+  top: 0;
+  right: 0;
+  border-left: 1px solid #d6d6d6; }
