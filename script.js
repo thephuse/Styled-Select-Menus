@@ -9,6 +9,13 @@ $(document).ready(function(){
 			var val = $(this).children("option:selected").text();
 			$(this).next(".selecttext").text(val);
 		});
+        var selectId = $(this).attr('id');
+        if( selectId !== undefined ){
+            var linkClass = selectId;
+        } 
+        if(linkClass){
+            $(this).parent('.selectbox').addClass(linkClass);
+        }
 	});
 
 });
